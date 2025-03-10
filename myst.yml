@@ -1,0 +1,15 @@
+# See docs at: https://mystmd.org/guide/frontmatter
+version: 1
+project:
+  id: ee007168-b9a5-4dba-8823-1639a4aeb956
+  title: Hello Style Sheets
+  references:
+    guide: https://mystmd.org/guide
+  toc:
+    - file: main.md
+    - file: another-page.md
+site:
+  template: book-theme
+  options:
+    logo_text: Style Sheets
+    style: ./style.css

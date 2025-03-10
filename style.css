@@ -1,0 +1,31 @@
+/* Style all H1 elements.
+ * Because this is a very loose selector, we need to override the MyST styles with !important
+ */
+h1 {
+  background-image: url(https://media.giphy.com/media/26BROrSHlmyzzHf3i/giphy.gif) !important;
+  background-size: cover !important;
+  color: transparent !important;
+  -moz-background-clip: text !important;
+  -webkit-background-clip: text !important;
+}
+
+.styled-note {
+  box-shadow: 0 0 20px 5px oklch(0.707 0.165 254.624);
+}
+
+.dark .styled-note {
+  box-shadow: 0 0 20px 5px oklch(0.379 0.146 265.522);
+}
+
+/* Style an element within a particular block */
+.styled-block code {
+  -webkit-text-stroke: 0.25px #d6f4f4;
+  color: transparent;
+  text-shadow:
+    1px 1px 0px #07bccc,
+    1.5px 1.5px 0px #e601c0,
+    2px 2px 0px #e9019a,
+    2.5px 2.5px 0px #f40468,
+    4.5px 4.5px 1px #482896;
+  cursor: pointer;
+}
