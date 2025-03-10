@@ -1,24 +1,21 @@
-/* Style all H1 elements.
+/* BEGIN-H2 */
+/* Style all H2 elements.
  * Because this is a very loose selector, we need to override the MyST styles with !important
  */
-h1 {
+h2 {
   background-image: url(https://media.giphy.com/media/26BROrSHlmyzzHf3i/giphy.gif) !important;
   background-size: cover !important;
   color: transparent !important;
   -moz-background-clip: text !important;
   -webkit-background-clip: text !important;
 }
+/* END-H2 */
 
-.styled-note {
-  box-shadow: 0 0 20px 5px oklch(0.707 0.165 254.624);
-}
-
-.dark .styled-note {
-  box-shadow: 0 0 20px 5px oklch(0.379 0.146 265.522);
-}
-
+/* BEGIN-BLOCK */
 /* Style an element within a particular block */
-.styled-block code {
+.styled-block
+  /* Select figcaptions that follow block-quotes */
+  blockquote + figcaption {
   -webkit-text-stroke: 0.25px #d6f4f4;
   color: transparent;
   text-shadow:
@@ -29,3 +26,21 @@ h1 {
     4.5px 4.5px 1px #482896;
   cursor: pointer;
 }
+/* END-BLOCK */
+
+/* BEGIN-NOTE */
+.styled-note {
+  box-shadow: 0 0 20px 5px oklch(0.707 0.165 254.624);
+}
+
+.dark .styled-note {
+  box-shadow: 0 0 20px 5px oklch(0.379 0.146 265.522);
+}
+/* END-NOTE */
+
+.by-position 
+/* BEGIN-BY-POSITION */
+li:nth-child(4) {
+  color: oklch(0.707 0.165 254.624);
+}
+/* END-BY-POSITION */

@@ -6,8 +6,10 @@ project:
   references:
     guide: https://mystmd.org/guide
   toc:
-    - file: main.md
-    - file: another-page.md
+    - file: index.md
+    - file: blocks.md
+    - file: admonitions.md
+    - file: by-position.md
 site:
   template: book-theme
   options:
